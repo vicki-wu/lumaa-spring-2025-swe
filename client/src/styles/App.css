@@ -1,0 +1,212 @@
+body {
+  background-color: #f5f6fa;  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: rgb(44, 45, 143);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: rgb(44, 45, 143);
+  cursor: pointer;
+}
+
+.main-content {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.tasks-container {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #6c757d;
+  grid-column: 1 / -1;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-logo {
+  color: rgb(44, 45, 143);
+  text-decoration: none;
+  font-size: 4rem;  
+  font-weight: bold;
+  margin-bottom: 0.5rem; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.auth-description {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.auth-form {
+  background-color: white;  
+}
+
+.auth-form h2 {
+  font-size: 2.5rem;
+  color: rgb(44, 45, 143);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.auth-form button {
+  margin-top: 1rem;
+}
+
+.auth-form .auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.auth-form .auth-switch a {
+  color: rgb(44, 45, 143);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-form .auth-switch a:hover {
+  text-decoration: underline;
+}
+
+form {
+  width: 600px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input, 
+form textarea {
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem ;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: Roboto, sans-serif;
+}
+
+form button {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+button {
+  background-color: rgb(44, 45, 143);
+  color: white;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(44, 45, 143, 0.9);
+}
+
+input, textarea {
+  width: 90%;
+  padding: 8px 12px;
+  margin: 8px 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn-complete {
+  background-color: #34c759; 
+}
+
+.btn-complete:hover {
+  background-color: #2db14d;
+}
+
+.btn-incomplete {
+  background-color: #ff3b30;  
+}
+
+.btn-incomplete:hover {
+  background-color: #e0352b;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.alert-danger {
+  margin-left: 1rem;
+  width: 90%;
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
+}
+
+.task-form h2 {
+  color: rgb(44, 45, 143);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.task-form label {
+  font-weight: 500;
+  padding-left: 1rem;
+}
+
